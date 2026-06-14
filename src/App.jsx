@@ -3,9 +3,11 @@ import Sidebar from "./components/Sidebar";
 import Board from "./pages/Board";
 import AddTask from "./pages/AddTask";
 import Dashboard from "./pages/Dashboard";
-import Home from "./pages/Home";
 import TaskDetails from "./pages/TaskDetails";
 import TeamMembers from "./pages/TeamMembers";
+import Reports from "./pages/Reports";
+import Search from "./pages/Search";
+import Home from "./pages/Home";
 import "./App.css";
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/add-task" element={<AddTask />} />
           <Route path="/task-details" element={<TaskDetails />} />
           <Route path="/team" element={<TeamMembers />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
       </div>
     </BrowserRouter>

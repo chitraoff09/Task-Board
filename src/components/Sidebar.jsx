@@ -21,7 +21,7 @@ export default function Sidebar() {
     { icon: FiPlus, label: "Add Task", path: "/add-task", highlight: true },
     { icon: FiUsers, label: "Team Members", path: "/team" },
     { icon: FiPieChart, label: "Reports", path: "/reports" },
-    { icon: FiFilter, label: "Filter Tasks", path: "/filter" },
+    { icon: FiFilter, label: "Filter Tasks", path: "/search" },
   ];
 
   const isActive = (path) => location.pathname === path;
