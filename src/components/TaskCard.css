@@ -37,6 +37,15 @@
   word-break: break-word;
 }
 
+.task-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.task-title-link:hover {
+  color: #28a745;
+}
+
 .task-actions {
   display: flex;
   gap: 4px;

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FiChevronRight } from "react-icons/fi";
 import TaskCard from "../components/TaskCard";
 import "./Board.css";
@@ -70,7 +71,13 @@ export default function Board() {
             <div className="tasks-container">
               {tasks.length > 0 ? (
                 tasks.map((task) => (
-                  <TaskCard key={task.id} task={task} status={status} />
+                  <Link
+                    key={task.id}
+                    to="/task-details"
+                    className="task-card-link"
+                  >
+                    <TaskCard task={task} status={status} />
+                  </Link>
                 ))
               ) : (
                 <p className="empty-message">No tasks yet</p>

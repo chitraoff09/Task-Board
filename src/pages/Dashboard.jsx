@@ -1,12 +1,6 @@
 import { Link } from "react-router-dom";
 import {
   FiChevronRight,
-  FiClipboard,
-  FiTrendingUp,
-  FiCheckCircle,
-  FiFlag,
-  FiUsers,
-  FiClock,
   FiActivity,
 } from "react-icons/fi";
 import "./Dashboard.css";
